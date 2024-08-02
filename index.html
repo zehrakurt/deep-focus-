@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >   
+<div  id="hero" >
+    <video autoplay loop muted>
+      <source src="video.mp4" type="video/mp4">
+    </source></video>
+    <div class="">  
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a style="margin-left: 40px;" class="navbar-brand" href="#">DEEP FOCUS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a style="margin-left: 840px;" class="nav-link" href="#music">Music</a>
+              </li>
+            </ul>
+            <a style="margin-left: 30px;" class="navbar-text" href="#asked">
+              Frequently Asked Questions
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="content">        
+      <div class="container">
+        <div class="bsk-1"> 
+          <h1>Phone Distraction Reducer</h1>
+        <p>Number of distractions: <span id="counter">0</span></p>
+        <button onclick="decreaseCounter()">-</button>
+            <button onclick="increaseCounter()">+</button>
+            <p id="display"></p>
+          </div> 
+<section class="ds-1"> 
+            <div id="music" class="first-1">You can listen to music while you work to make it easier for you to focus. </div>
+        <div class="d-flex justify-content-around mb-5">
+          <div class="col-example"><i class="bi bi-fast-forward-btn" title="Play" onclick="music_event()"></i>
+            <audio id="audio" src="music/Deniz Dalga Sesi.m4a"></audio><p>sea ​​sound</p></div>
+          <div class="col-example"><i class="bi bi bi-fast-forward-btn" title="Play" onclick="music_event2()"></i>
+            <audio id="wind" src="music/Rüzgar sesi  doğa sesleri.m4a"></audio><p>wind sound</p></div>
+          <div class="col-example"><i class="bi bi-fast-forward-btn" title="Play" onclick="music_event3()"></i>
+            <audio id="walse" src="music/Evgeny Grinko - Valse.m4a"></audio><p> piano sound</p></div>
+            <div class="col-example"><i class="bi bi-fast-forward-btn" title="Play" onclick="music_event4()"></i>
+              <audio id="focus" src="music/Odaklanma.m4a"></audio><p>coffee shop</p></div>
+        </div>
+        <div class="d-flex justify-content-around">
+          <div class="col-example"><i class="bi bi-fast-forward-btn" title="Play" onclick="music_event5()"></i>
+            <audio id="violin" src="music/Classical Violin.m4a"></audio><p>violin sound</p></div>
+          <div class="col-example"><i class="bi bi-fast-forward-btn" title="Play" onclick="music_event6()"></i>
+            <audio id="birds" src="music/hisohkah, WMD - School Rooftop (Bird Sounds).m4a"></audio><p>birds sound</p></div>
+          <div class="col-example"><i class="bi bi-fast-forward-btn" title="Play" onclick="music_event7()"></i>
+            <audio id="waves" src="music/sea waves sound effects.m4a"></audio><p> waves sound</p></div>
+            <div class="col-example"><i class="bi bi-fast-forward-btn" title="Play" onclick="music_event8()"></i>
+              <audio id="rain" src="music/Thunder and Rain  Sounds for Focus Release Stress #shorts #short #shortvideo #shortsvideo.m4a"></audio><p>rain sound</p></div>
+        </div>
+      </section>
+      <div > <h3 class="attention">What is Attention Deficit?</h3>
+        <p>According to DSM-5, defined as the diagnostic and statistical manual of mental disorders, the name of the syndrome is Attention Deficit Hyperactivity Disorder. Attention deficit disorder is not defined as a different disorder from this syndrome, but as a subtype of the same syndrome without hyperactivity. Attention deficit disorder (ADD) was not recognized as a disease for many years. However, today it is accepted that ADHD is a genetically transmitted, biological disease.
+          Since attention deficit disorder alone was not defined as a disease in the past, many people with this disorder were branded as failures throughout their lives, had low academic achievements, were considered antisocial personalities, and were excluded from society. Today, criteria are determined according to DSM-5, which is defined as the diagnostic and statistical manual of mental disorders published by the American Psychiatric Association and determines the criteria for diagnosing mental illnesses, and ADD is defined as a subtype of ADHD.
+          ADHD is more common in boys during childhood. Ratios of 2:1 are stated in some series, and up to 6:1 in some series. As we approach adulthood, the incidence in women increases and the incidence rate is almost equal to that in men.</p>
+      </div>
+      <section style="margin-top: 170px;">
+        <h3 id="asked" class="attention"> Frequently Asked Questions</h3>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              WHAT CAN BE DONE AT HOME FOR ATTENTION DEFICIT?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Some things you can do to cope with attention deficit at home include establishing a regular daily routine, reducing distractions, exercising regularly, adopting a balanced diet, paying attention to your sleep patterns, and limiting technology use.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">             
+WHAT ARE THE SYMPTOMS OF ATTENTION DEFICIT IN ADULTS?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Symptoms of attention deficit in adults may include being easily distracted, forgetfulness, organizational difficulties, difficulty completing tasks, persistent procrastination, and a tendency to make careless mistakes. Additionally, impatience, impulsive behavior, and anger management difficulties may also be symptoms of attention deficit.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              WHAT IS GOOD FOR ATTENTION DEFICIT?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Some methods that may help manage attention deficit include cognitive behavioral therapy, medication (with a doctor's recommendation), lifestyle changes, stress management, regular sleep, and healthy nutrition. Additionally, support groups and professional help can also be helpful in coping with attention deficit disorder.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              HOW TO UNDERSTAND ATTENTION DEFICIT?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Inattention is defined based on the presence of certain symptoms. These symptoms include constant distraction, forgetfulness, inability to complete tasks, and work that is constantly postponed. To diagnose attention deficit, a specialist may need to examine the symptoms and perform psychological tests if necessary.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              HOW IS ATTENTION DEFICIT TREATMENT IN ADULTS?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Treatment of attention deficit in adults may vary depending on individual needs. Cognitive behavioral therapy, medication, and lifestyle changes are common treatment options. During the treatment process, the aim is to alleviate the person's symptoms and increase their functionality. In case of drug therapy, medications prescribed by a specialist should be used.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              WHAT IS GOOD FOR ATTENTION DEFICIT IN CHILDREN?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> To manage attention deficit in children, it is important to first get help from a specialist. Treatment options may include cognitive behavioral therapy, family education, teacher support, and medication when necessary. In addition, establishing regular routines in the child's daily life, paying attention to healthy nutrition, providing regular physical activity and limiting the use of technology can also help manage attention deficit.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </div> 
+    </div>
+  </div>
+    </div> 
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+ <script src="script.js"></script>   
+</body>
+</html>
